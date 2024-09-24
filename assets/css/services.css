@@ -1,0 +1,128 @@
+/* MOBILE FIRST APPROACH */
+
+/*A. For Mobile Phones: */
+#services {
+  /*   display: none !important; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 100%;
+  padding: 20px;
+  background: radial-gradient(circle, #f3ecdc, #c7d8c1);
+}
+
+#services-header-component {
+  text-align: center;
+  width: 100%;
+}
+
+child-1-a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#services-body-component {
+  /* display: none !important; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.children {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 385px;
+  margin-bottom: 20px;
+}
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 385px;
+  width: 100%;
+  height: auto;
+}
+
+#image-container:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  opacity: 0.8;
+}
+
+.title-style {
+  text-align: center;
+  color: #555555;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+#image-container > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*For Mobile Phone and Tablet */
+@media only screen and (max-width: 768px) {
+  #services {
+    padding: 10px;
+  }
+
+  .child-1-a {
+    font-size: 1.5rem;
+  }
+
+  .children {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #services-body-component {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #image-container {
+    max-width: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  text-2xl {
+    font-size: 1.25rem;
+  }
+
+  text-base {
+    font-size: 0.9rem;
+  }
+}
+
+/* For Desktop: */
+@media only screen and (min-width: 768px) {
+  #services {
+    /* display: none !important; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 100%;
+    padding: 20px;
+    background: radial-gradient(circle, #f3ecdc, #c7d8c1);
+  }
+}

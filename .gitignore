@@ -1,0 +1,17 @@
+# Ignore user-specific and system files
+.vscode/
+.idea/
+node_modules/
+.DS_Store
+.cache/
+.npmrc
+.yarnrc
+.yarn/
+.env
+.env.local
+*.pdf
+*.docx
+*.png
+*.gif
+*.exe
+New folder/
