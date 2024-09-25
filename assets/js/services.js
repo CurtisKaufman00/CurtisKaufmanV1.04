@@ -1,23 +1,31 @@
 const servicesData = [
   {
     title: "NEW BUILD",
-    subtitle: "",
-    imageSrc: "assets/images/Services/servicesNewBuild.png",
+    subtitle:
+      "Bring your vision to life with our expert new build services. Start building today!",
+    imageSrc: "./assets/images/Services/servicesNewBuild.png",
+    cta: "Book a Free Consultation",
   },
   {
     title: "CONSERVATION and REPAIRS",
-    subtitle: "",
-    imageSrc: "assets/images/Services/servicesRepairs.png",
+    subtitle:
+      "Restore and protect your property with our skilled repair and conservation work. Contact us now!",
+    imageSrc: "./assets/images/Services/servicesRepairs.png",
+    cta: "Book a Free Consultation",
   },
   {
     title: "ADDITION AND ALTERATION",
-    subtitle: "",
-    imageSrc: "assets/images/Services/servicesAddition.png",
+    subtitle:
+      "Expand and transform your space with our seamless additions. Let’s enhance your property!",
+    imageSrc: "./assets/images/Services/servicesAddition.png",
+    cta: "Book a Free Consultation",
   },
   {
     title: "INTERIOR FIT OUT",
-    subtitle: "",
-    imageSrc: "assets/images/Services/servicesInteriorFitOut.png",
+    subtitle:
+      "Upgrade your interiors with custom fit-out solutions. Ready for a refresh? Let's start!",
+    imageSrc: "./assets/images/Services/servicesInteriorFitOut.png",
+    cta: "Book a Free Consultation",
   },
 ];
 
@@ -35,18 +43,30 @@ servicesData.forEach((service, index) => {
     .querySelector(".children")
     .cloneNode(true);
 
-
   // Update the image source
   const image = serviceTemplate.querySelector("#image-container img");
   image.src = service.imageSrc;
 
   // Update title and description
-  const title = serviceTemplate.querySelector(".text-2xl");
+  const title = serviceTemplate.querySelector(".title");
   title.textContent = service.title;
-  title.classList.add('title-style'); // Apply custom title styles
 
-  const description = serviceTemplate.querySelector(".font-normal");
+  // SAMPLE SYNTAX: Applying custom title styles using JS
+  //title.classList.add("title-style");
+  // Then add this in CSS:
+  /* .title-style {
+  text-align: center;
+  color: #555555;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+} */
+
+  const description = serviceTemplate.querySelector(".subtext");
   description.textContent = service.subtitle;
+
+  const cta = serviceTemplate.querySelector(".cta");
+  cta.textContent = service.cta;
 
   // Show the cloned service item
   serviceTemplate.style.display = "block";
