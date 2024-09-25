@@ -38,6 +38,8 @@
   line-height: 25.12px; /* Line height */
   text-align: center;
   color: #772f1a;
+  display: flex;
+  flex-direction: column;
 }
 
 .children {
@@ -45,14 +47,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 543px;
+  border-radius: 5px !important;
 }
 
 #image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*   max-width: 385px; */
   width: 100%;
   height: 389.15px !important;
   overflow: hidden;
@@ -71,13 +72,14 @@
 }
 
 .children .children-description {
-  position: relative;
   width: 100%;
   height: 133.12px;
-  padding: 3px 15px 5px 15px;
+  padding: 15px 15px 20px 15px;
   gap: 6px;
   opacity: 0px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 
   /* Prevent text from overflowing outside the div */
   overflow-wrap: break-word; /* Break long words if necessary */
@@ -105,13 +107,6 @@
   text-align: center;
   color: #344e41;
   text-decoration: underline;
-  margin-bottom: auto;
-  bottom: 0;
-  position: absolute;
-  left: 50%; /* Move the left edge to the center of the parent */
-  transform: translateX(
-    -50%
-  ); /* Shift the child back by half of its own width */
 }
 
 /*B. For Tablet Portrait */
@@ -126,7 +121,6 @@
 /* For Desktop: */
 @media only screen and (min-width: 768px) {
   #services {
-    /* display: none !important; */
     width: 100%;
     height: 100%;
 
@@ -135,7 +129,6 @@
     flex-direction: column;
     justify-content: flex-start; /* justify-start */
     align-items: flex-start; /* items-start */
-    /* gap: 46.67px; */ /* gap-[46.67px] */
     padding: 40px;
   }
 
@@ -153,32 +146,21 @@
 
   #services-body-component {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     font-family: "Gotham", sans-serif; /* Font family */
-    font-size: 18px !important; /* Font size */
+    font-size: 16px !important; /* Font size */
     font-weight: 700; /* Font weight (bold) */
     line-height: 25.12px; /* Line height */
     text-align: center;
     color: #772f1a;
   }
 
-  /* OLD */
-  /* .children {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 385px;
-    margin-bottom: 20px;
-  } */
-
-  /* UPDATED AS OF 25/9/2024 */
   .children {
-    height: 543.12px; /* Set height to 543.12px */
     gap: 20px; /* Space between items, only applicable in flex/grid containers */
+    border-radius: 5px !important;
   }
 
   #image-container {
@@ -199,11 +181,11 @@
 
   .children .children-description {
     width: 100%;
-    height: 133.12px;
     padding: 15px 15px 20px 15px;
-    gap: 12.56px;
     opacity: 0px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 
     /* Prevent text from overflowing outside the div */
     overflow-wrap: break-word; /* Break long words if necessary */
@@ -214,8 +196,7 @@
   }
 
   .subtext {
-    /* font-family: 'Poppins', sans-serif; */ /* Use Poppins font, with a fallback to sans-serif */
-    font-size: 16px; /* Set the font size to 16px */
+    font-size: 14px; /* Set the font size to 16px */
     font-weight: 400; /* Set the font weight to normal (400) */
     line-height: 20.41px; /* Set the line height to 20.41px */
     text-align: center; /* Align the text to the center */
@@ -231,8 +212,5 @@
     text-align: center;
     color: #344e41;
     text-decoration: underline;
-    transform: translateX(10%);
-    left: auto; /* Reset left positioning */
-    right: 27%;
   }
 }
