@@ -1,0 +1,169 @@
+/* MOBILE FIRST APPROACH */
+
+/*A. For Mobile Phones: */
+.contact-form-body {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #f3ecdc, #c7d8c1);
+  font-family: "Roboto", sans-serif;
+  color: #4a5568;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 15px 40px 15px;
+  gap: 20px;
+}
+
+#contact-header-component {
+  align-self: stretch;
+  margin-top: 80px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Gotham", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1.2px;
+  text-align: center;
+}
+
+#contact-header-component .subtitle {
+  color: #588157;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 4px !important;
+  color: #010b2f;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.Row {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+
+#button-main-container {
+  width: 100%;
+  height: 50px;
+}
+
+#button-main-container .button-container {
+  width: 100%;
+  background-color: #772f1a;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+#button-main-container .button-container:hover {
+  background: linear-gradient(to right, #588157, #2c5234);
+  /* color: white !important;  */
+}
+
+/*B. For Tablet Portrait */
+@media (min-width: 600px) {
+  #button-main-container .button-container {
+    width: 50%;
+  }
+}
+
+/*C. For Tablet Landscape */
+/* @media (min-width: 900px) {
+
+} */
+
+/*D. For Desktop: */
+@media only screen and (min-width: 768px) {
+  #contact-header-component {
+    text-align: center; /* OK */
+    align-self: stretch;
+    margin-top: 80px; /* OK */
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #contact-header-component .header {
+    font-size: 4rem; /* OK */
+    font-weight: bold; /* OK */
+  }
+
+  #contact-header-component .subtitle {
+    color: #588157; /* OK */
+    font-size: 17px; /* OK */
+  }
+
+  #form-container {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #010b2f;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* BUTTON */
+  #button-main-container {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white !important;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    display: inline-flex;
+    width: 100%;
+  }
+
+  #button-main-container .button-container {
+    width: 100%;
+    background-color: #772f1a;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px !important;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+
+  #button-main-container .button-container:hover {
+    background: linear-gradient(to right, #588157, #2c5234);
+    /* color: white !important;  */
+  }
+
+  #message-input {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    outline: none;
+    line-height: normal;
+    appearance: none;
+    padding-bottom: 100px;
+    white-space: pre-line !important;
+  }
+}
