@@ -6,6 +6,31 @@
         <div id="services-header-component">
           <div>Services We Offer</div>
         </div>
+
+        <!-- Modal structure -->
+        <div id="calendlyModal" class="glass-effect">
+          <!-- Calendly widget will load here -->
+          <div id="calendly-embed"></div>
+
+          <!-- Close Button -->
+          <button onclick="closeCalendlyModal()">&times;</button>
+        </div>
+
+        <!-- Overlay for the modal -->
+        <div
+          id="modalOverlay"
+          style="
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+          "
+        ></div>
+
         <!-- Body -->
         <div id="services-body-component">
           <div class="children">
@@ -31,12 +56,18 @@
               </div>
 
               <!-- CTA -->
-              <div class="cta"></div>
+              <div
+                class="cta"
+                id="openPopupButton"
+                onclick="openCalendlyModal()"
+              ></div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="../assets/js/calendyV2.js"></script>
     <script src="../assets/js/services.js"></script>
   </body>
 </html>
