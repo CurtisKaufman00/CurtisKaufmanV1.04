@@ -4088,47 +4088,47 @@ body.is-mobile.landing #footer {
 }
 
 /* Style for the container div for calendy widget */
-.popup-content {
+/* .popup-content {
   position: relative;
-}
+} */
 
 /* For desktop and iPad mini*/
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   #popupContainer {
     display: block;
     top: 0px;
     z-index: 1000;
   }
-}
+} */
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   #popupContainer {
     display: block;
     position: absolute;
     top: 50px;
     z-index: 1000;
   }
-}
+} */
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 390px) {
+/* @media only screen and (max-width: 390px) {
   #popupContainer {
     display: block;
     position: absolute;
     top: 50px;
     z-index: 1000;
   }
-}
+} */
 
 /* Page Zero: Services */
 
-#servicesContainer > div {
+/* #servicesContainer > div {
   width: 300px;
   margin: 10px;
   text-align: center;
   font-size: 16px;
-}
+} */
 
 /* MOBILE FIRST APPROACH */
 
@@ -4137,7 +4137,7 @@ body.is-mobile.landing #footer {
 /*D. For Desktop: */
 /* Header */
 
-#header-new {
+/* #header-new {
   -moz-transition: background-color 0.2s ease;
   -webkit-transition: background-color 0.2s ease;
   -ms-transition: background-color 0.2s ease;
@@ -4189,12 +4189,12 @@ body.is-mobile.landing #footer {
   #header-new h1 a {
     font-size: 0.8em;
   }
-}
+} */
 
 /* Updated 9/25/24 */
-#header-new nav {
+/* #header-new nav {
   width: 100%;
-  background: #b43d3d; /* test color */
+  background: #b43d3d;
   overflow: hidden;
   top: 0%;
   position: fixed;
@@ -4231,7 +4231,7 @@ body.is-mobile.landing #footer {
 }
 
 #header-new nav > ul > li > a.menuToggle:after {
-  /*  background-image: url("images/bars.svg"); */
+   background-image: url("images/bars.svg");
   background-position: right center;
   background-repeat: no-repeat;
   content: "";
@@ -4268,11 +4268,11 @@ body.is-mobile.landing #footer {
 #header-new.alt h1 {
   pointer-events: none;
   opacity: 0;
-}
+} */
 
 /* Desktop View */
 /* Start of NavBar */
-/* .navbar {
+.navbar {
   overflow: hidden;
   margin-bottom: 10px;
 }
@@ -4305,10 +4305,11 @@ body.is-mobile.landing #footer {
 
 .navbar .icon {
   display: none;
-} */
+}
 
-.navbar {
+/* .navbar {
   padding: 0;
+  background-color: #a6e0db;
 }
 
 .navbar ul {
@@ -4372,17 +4373,47 @@ body.is-mobile.landing #footer {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #772f1a; /* Test Color */
+  color: #772f1a;
 }
 
-.navbar
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #00ffcc;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); 
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #772f1a;
+  text-transform: none;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar */
 
 /* Desktop View */
 /* End of NavBar */
 
 /* Mobile View */
 /* Start of NavBar */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
   }
@@ -4406,11 +4437,11 @@ body.is-mobile.landing #footer {
     float: left;
     display: block;
   }
-} */
+}
 
 
-.mobile.nav-toggle {
-  color: #00f0ff; /* Test Color */
+/* .mobile.nav-toggle {
+  color: #00f0ff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -4435,7 +4466,7 @@ body.is-mobile.landing #footer {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9); /* Test Color */
+  background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -4454,23 +4485,84 @@ body.is-mobile.landing #footer {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #00f0ff; /* Test Color */
+  background-color: #00f0ff;
   overflow-y: auto;
   transition: 0.3s;
 }
 
-.navbar-mobile ul li {
-  padding: 10px 0;
+.navbar-mobile>ul>li {
+  padding: 0;
 }
 
 .navbar-mobile a:hover:before,
-.navbar-mobile li:hover > a:before,
+.navbar-mobile li:hover>a:before,
 .navbar-mobile .active:before {
   visibility: hidden;
 }
 
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover>a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {},
+.navbar-mobile li:hover>a {
+  color: #f82249; 
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+} */
 /* Mobile View */
 /* End of NavBar */
+
+
+/* Header Logo */
+/* #header-m #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+} */
+
+/* Logo mobile view */
+#header #logo img {
+  max-height: 120px;
+}
+
+/* Header-m */
+/* #header-m {
+  height: 90px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+#header-m.header-m-scrolled,
+#header-m.header-m-inner {
+  background: rgba(43, 76, 195, 0.98); 
+  height: 70px;
+}
+
+#header-m #logo a 
+#header-m #logo a:hover {
+  color: #fff; 
+} */
