@@ -81,3 +81,23 @@
 		}
 
 })(jQuery);
+
+
+/* navbar toggle responsiveness */
+function toggleMenu() {
+  const navBar = document.getElementById('myNavBar');
+  navBar.classList.toggle('nav-active');
+}
+
+
+
+/* For Mobile Responsiveness of NavBar */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+

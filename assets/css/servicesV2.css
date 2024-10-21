@@ -1,0 +1,37 @@
+/* Container holding the image and the overlay */
+.image-overlay-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+/* Text overlay - hidden by default */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none; /* Prevent text from blocking hover */
+}
+
+/* Hover effect */
+.image-overlay-container:hover #image-container img {
+  transform: scale(1.1); /* Zoom the image on hover */
+}
+
+.image-overlay-container:hover .overlay-text {
+  opacity: 1; /* Show the text */
+}
