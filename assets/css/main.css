@@ -3537,17 +3537,16 @@ body.is-menu-visible #menu {
 }
 
 /* Header */
-
 #header {
   -moz-transition: background-color 0.2s ease;
   -webkit-transition: background-color 0.2s ease;
   -ms-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
   background: #2e3842;
-  height: 8em;
+  height: 4em;
   left: 0;
   line-height: 3em;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 10000;
@@ -3672,29 +3671,6 @@ body.is-menu-visible #menu {
   pointer-events: none;
   opacity: 0;
 }
-
-/* Banner */
-
-/* #banner {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -moz-flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  cursor: default;
-  height: 100vh;
-  min-height: 35em;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-} */
 
 #banner h2 {
   -moz-transform: scale(1);
@@ -4121,14 +4097,7 @@ body.is-mobile.landing #footer {
   }
 } */
 
-/* Page Zero: Services */
 
-/* #servicesContainer > div {
-  width: 300px;
-  margin: 10px;
-  text-align: center;
-  font-size: 16px;
-} */
 
 /* MOBILE FIRST APPROACH */
 
@@ -4137,36 +4106,6 @@ body.is-mobile.landing #footer {
 /*D. For Desktop: */
 /* Header */
 
-
-
-
-/* .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  text-decoration: none;
-  padding: 10px 20px;
-}
-
-.nav-links li {
-  display: inline-block;
- }
-
- .nav-links a {
-  text-decoration: underline;
-  padding: 5px 10px;
- }
-
- ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
- }
-
- ul li {
-  margin: 0 10px;
- } */
 
 
 
@@ -4204,13 +4143,14 @@ body.is-mobile.landing #footer {
   background-color: #ddd;
   border-bottom: 3px solid #344e41;
   text-decoration: none;
+  color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: #ddd;
   color: burlywood;
-  color: #344e41;
+  /* color: #344e41; */
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -4264,7 +4204,7 @@ body.is-mobile.landing #footer {
   height: 50px;
   padding: 0;
   margin: 0;
-  max-width: 150px;
+  max-width: 120px;
   border-bottom: 0px solid transparent;
 }
 

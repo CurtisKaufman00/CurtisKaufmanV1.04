@@ -1,0 +1,216 @@
+/* BORDER RADIUS */
+/* border-radius: 5px; max */
+
+/* Main Text / H1 */
+/* font-family: 'Gotham Black', sans-serif; */
+
+/* Secondary Text */
+/* font-family: "Roboto", sans-serif; */
+
+
+
+
+/*A. For Desktop: */
+
+/* UPDATED 10-24-24*/
+#banner {
+    position: relative;
+    height: 100%;
+    text-align: center;
+  }
+
+  .fade-slides {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    height: 800px !important;
+  }
+
+  .fade-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .fade-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  }
+
+  .fade-slide.active {
+    opacity: 1;
+  }
+
+  .button-container:hover {
+    background-color: #2c5234;
+  }
+
+  .fade-caption {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    padding: 0px;
+    color: white;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+  }
+
+  #subtitle-text {
+    direction: ltr;
+    width: 100%;
+    white-space: normal;
+    color: white;
+    white-space: normal;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 50px;
+    letter-spacing: 0.15em;
+  }
+
+  #biggest-text {
+    width: 100%;
+    white-space: normal;
+    text-align: left;
+    text-justify: auto;
+    font-family: "Gotham Black", sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 70px;
+    color: #f3ecdc;
+    white-space: normal;
+    margin-top: 10px;
+  }
+
+  .button-container {
+    width: 123px;
+    height: 52px;
+    padding: 16px 0;
+    margin-top: 50px;
+    background-color: #588157;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+
+  /* MOBILE FIRST APPROACH */
+
+   /*B. For Tablet Portrait */
+   /* UPDATED 10-24-24*/
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-inner {
+      height: 300px !important;
+      width: 100%;
+    }
+
+    .fade-caption {
+      padding: 5px;
+      margin-top: 10px;
+      position: absolute;
+      overflow: hidden;
+    }
+
+    #biggest-text {
+      font-size: 35px;
+      line-height: 30px;
+    }
+
+    #subtitle-text {
+      font-size: 22px;
+      line-height: 20px;
+    }
+
+    .button-container {
+      font-size: 10px;
+      height: 30px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 2px;
+      padding-left: 2px;
+    }
+  }
+
+/*C. For Mobile Phones: */
+  @media (max-width: 430px) {
+    .carousel-inner img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-inner {
+      height: 300px !important;
+      width: 100%;
+    }
+
+    .fade-caption {
+      top: 50%;
+      height: 100%;
+      width: 90%;
+      padding-top: 0px;
+    }
+
+    .subtitle-text {
+      font-size: 10px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    #biggest-text {
+      font-size: 18px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      line-height: 35px;
+    }
+
+    .button-container {
+      font-size: 10px;
+      min-height: auto;
+      margin-top: 0px;
+    }
+  }

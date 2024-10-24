@@ -1,38 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Curtis Kaufman</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <!-- CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/navbar.css" />
-	<link rel="stylesheet" href="assets/css/banner.css" />
-<!--     <link rel="stylesheet" href="assets/css/banner-volt.css" /> -->
-    <link rel="stylesheet" href="assets/css/services.css" />
-    <link rel="stylesheet" href="assets/css/about.css" />
-    <!-- <link rel="stylesheet" href="assets/css/servicesV2.css" /> -->
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/contactForm.css" />
-    <link
+	<head>
+		<title>Curtis Kaufman</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="assets/css/banner.css" /> -->
+		<link rel="stylesheet" href="assets/css/navbar.css" />
+   		<link rel="stylesheet" href="assets/css/banner-volt.css" />
+		<link rel="stylesheet" href="assets/css/services.css" />
+		<link rel="stylesheet" href="assets/css/email.css" />
+		<link rel="stylesheet" href="assets/css/about.css" />
+    	<!-- <link rel="stylesheet" href="assets/css/servicesV2.css" /> -->
+    	<link rel="stylesheet" href="assets/css/footer.css" />
+   		 <link rel="stylesheet" href="assets/css/contactForm.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -46,10 +29,11 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
-  </head>
-  <body class="landing is-preload">
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
+	</head>
+	<body class="landing is-preload">
+       
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
       
     <header id="header" class="d-flex align-items-center">
       <!-- Start of Navbar -->
@@ -72,40 +56,103 @@
                   <i class="fa fa-bars"></i>
               </a>
             </div>
-      </nav><!-- End of NavBar -->
-	  
+        </nav><!-- End of NavBar -->
     </header>
 
       <!-- Banner -->
-      
+      <section id="banner" class="flex-container">
+        <div id="carousel-example-generic" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active fade-slide">
+              <img src="./assets/images/Banner/bannerCarousel1.png" class="img-fluid" alt="Slide 1"/>
+              <div class="fade-overlay"></div>
+            </div>
+
+            <div class="carousel-item fade-slide">
+              <img src="./assets/images/Banner/bannerCarousel2.jpg" class="img-fluid" alt="Slide 2"/>
+              <div class="fade-overlay"></div>
+            </div>
+
+            <div class="carousel-item fade-slide">
+              <img src="./assets/images/Banner/bannerCarousel3.png" class="img-fluid" alt="Slide 3"/>
+              <div class="fade-overlay"></div>
+            </div>
+          </div><!-- End of Listbox -->
+
+          <div class="fade-caption">
+           <div id="subtitle-text">Reliable. Experienced. Professional</div>
+            <div id="biggest-text">
+              LET’S TURN YOUR DREAM HOME INTO A REALITY.
+            </div> 
+   
+            <div class="button-container">
+              <div class="text-white text-xl font-bold font-roboto uppercase tracking-wide">
+                Get Started
+              </div>
+            </div>
+        </div> 
+          <!-- End of fade-caption -->
+       </div>
+      </section>
 
       <!-- Banner -->
-      <div id="banner-section"></div>
+      <!-- <div id="banner-section"></div> -->
 
 
-      <!-- Services -->
-      <div id="services-section"></div>
+							<!-- Row 2 -->
+							<div id="row-phone-label">
+								<div>Phone number</div>
+									<input
+									type="text"
+									id="number-field"
+									required
+									/>
+							</div>
 
-      <!-- Services V2 -->
-      <!-- <div id="services-section-V2"></div> -->
+							<!-- Row 3 -->
+							<div class="Col"
+							>
+								<div>Message</div>
+									<input
+									type="text"
+									id="message-input"
+									required
+									/>
+								</div>
+							</div>
 
-      <!-- About -->
-      <div id="about-section"></div>
+						<div
+							id="button-main-container"
+						>
+							<input type="submit" class="button-container" value="Send Message">
+							</div>
+						</div>
+						</form>
+						</div>
+					</section>
 
-      <!-- Gallery -->
-      <div id="gallery-section"></div>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<li><a href="https://www.instagram.com/ccameron797/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+						</ul>
+						<ul class="copyright">
+							<li>EMAIL:curtiskaufman404@gmail.com </li><li>Design Version: 1.02 </li>
+						</ul>
+					</footer>
 
-      <!-- Contact Form-->
-      <div id="contact-form-section"></div>
-
-      <!-- Footer -->
-      <div id="footer-section"></div>
-    </div>
-
+			</div>
+			
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
-    <!-- <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script> -->
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
@@ -127,3 +174,4 @@
     </script>
   </body>
 </html>
+

@@ -1,0 +1,122 @@
+nav {
+  display: block;
+}
+
+#header2 .navbar2 {
+  overflow: hidden;
+  background-color: #fffbfb; /* test color */
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
+#header2 .navbar2 {
+  overflow: hidden;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur to the background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border to accentuate */
+  color: white; /* Text color */
+  text-transform: uppercase;
+}
+
+#header2 nav > ul > li > a.menuToggle2 {
+  outline: 0;
+  position: relative;
+}
+
+#header2 nav > ul > li > a.menuToggle2:after {
+  background-image: url("images/bars.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 3.75em;
+  vertical-align: top;
+  width: 2em;
+}
+
+#header2.alt {
+  background: transparent;
+  height: 10px; /* dont change */
+}
+
+#header2.alt h1 {
+  pointer-events: none;
+  opacity: 0;
+}
+
+@media screen and (max-width: 736px) {
+  #header2 nav > ul > li > a.menuToggle {
+    padding: 0 1.5em;
+  }
+
+  #header2 nav > ul > li > a.menuToggle span {
+    display: none;
+  }
+}
+
+#header-new nav > ul > li > a.menuToggle {
+  outline: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 736px) {
+  #header-new nav > ul > li > a.menuToggle {
+    padding: 0 1.5em;
+  }
+
+  #header-new nav > ul > li > a.menuToggle span {
+    display: none;
+  }
+}
+
+#menu2 .close {
+  background-image: url("images/close.svg");
+  background-position: 4.85em 1em;
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  height: 3em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  vertical-align: middle;
+  width: 7em;
+}
+
+#header2 #row2 {
+  /*  height: 200px; */
+  height: 10px;
+  border: 0;
+  left: 0;
+  /*   flex: 1;
+  flex-direction: row; */
+}
+
+#header2 #row2 #logo2 {
+  /*  max-height: 150px; */
+  max-height: 10px;
+  margin-top: -50px;
+  margin-left: -20px;
+  /*   position: relative; */
+  position: sticky;
+  max-width: 40%;
+}
+
+ul.actions.special2 {
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0;
+}
+
+ul.actions.special2 li:first-child {
+  padding-left: 0;
+}
