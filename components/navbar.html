@@ -1,29 +1,54 @@
 <html>
-  <header id="header2" class="alt">
-    <div id="row2">
-      <img id="logo2" src="assets/images/Branding/CKaufmanLogo.png" />
-      <h1><a href="index.html"></a></h1>
-    </div>
-    <nav id="nav2">
-      <ul>
-        <li class="special2">
-          <a href="#menu2" class="menuToggle2"><span>Menu</span></a>
-          <div id="menu2">
-            <ul>
-              <li><a href="#banner-section">Home</a></li>
-              <li><a href="#services-section">Our Services</a></li>
-              <li><a href="#one">About</a></li>
-              <li><a href="#contact-form-section">Contact</a></li>
-              <li><a href="#footer">Socials</a></li>
-
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <body>
+  <header id="header" class="d-flex align-items-center">
+    <!-- Start of Navbar -->
+    <nav id="myNavBar" class="navbar order-Slast order-lg-0">
+      <div id="logo" class="me-auto">
+        <a href="index.html">
+          <img src="assets/images/Branding/CKaufmanLogo.png" />
+        </a>
+      </div>
+        <nav class="topnav" id="myTopnav">
+            <a href="#banner-section">Home</a>
+            <a href="#one">Cabins</a>
+            <a href="#services-section" class="dropdown">Our Services <i id="dropbtn" class="fa fa-caret-down"></i>
+              <!-- <div class="dropdown"> -->
+                <div class="dropdown-content">
+                  <a href="">Link 1</a>
+                  <a href="">Link 2</a>
+                  <a href="">Link 3</a>
+                </div>
+              <!-- </div> -->
+            </a>
+            <a href="#contact-form-section">Contact Us</a>
+            <a href="#footer" id="nav-btn" class="nav-button-container">LOG IN</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-user-circle"></i>
                 <i class="fa fa-bars"></i>
-              </a>
-            </ul>
+            </a>
           </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <script src="../assets/js/navbar.js"></script>
-</html>
+
+          <script>
+            function myDropdown(){
+              document.getElementById("myDropdown-content").classList.toggle("show");
+            }
+          </script>
+
+        
+        </nav><!-- End of NavBar -->
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+          </div>
+      </div>
+      </header>
+      
+      <script src="../assets/js/navbar.js"></script>
+    </body>
+      </html>
+
+    

@@ -62,7 +62,7 @@
   }
 
   .button-container:hover {
-    background-color: #2c5234;
+    background-color: #662714;
   }
 
   .fade-caption {
@@ -76,7 +76,7 @@
     color: white;
     z-index: 1;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     position: absolute;
     height: 100%;
     width: 90%;
@@ -89,7 +89,7 @@
     white-space: normal;
     color: white;
     white-space: normal;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -107,7 +107,7 @@
     text-justify: auto;
     font-family: "Gotham Black", sans-serif;
     font-size: 60px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 70px;
     color: #f3ecdc;
     white-space: normal;
@@ -118,8 +118,9 @@
     width: 123px;
     height: 52px;
     padding: 16px 0;
-    margin-top: 50px;
-    background-color: #588157;
+    margin-top: 20px;
+    color: #772f1a;
+    background-color: #772f1a;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
@@ -129,7 +130,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 0px;
     color: white;
     transition: background-color 0.3s ease; /* Smooth transition for background color */
   }
@@ -162,7 +163,7 @@
     }
 
     #subtitle-text {
-      font-size: 22px;
+      font-size: 10px;
       line-height: 20px;
     }
 

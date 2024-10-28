@@ -1,48 +1,40 @@
 <html>
   <body>
     <section id="banner" class="flex-container">
-      <div
-        id="carousel-example-generic"
-        class="carousel slide"
-        data-ride="carousel"
-      >
+      <div id="carousel-example-generic" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
         <div class="carousel-inner" role="listbox">
-          <div class="active fade-slide">
-            <img
-              src="./assets/images/Banner/bannerCarousel1.png"
-              alt="Slide 1"
-            />
-          </div>
-          <div class="fade-slide">
-            <img
-              src="./assets/images/Banner/bannerCarousel2.jpg"
-              alt="Slide 2"
-            />
+
+          <div class="carousel-item active fade-slide">
+            <img src="./assets/images/Banner/bannerCarousel1.png" class="img-fluid" alt="Slide 1"/>
             <div class="fade-overlay"></div>
-          </div>
-          <div class="fade-slide">
-            <img
-              src="./assets/images/Banner/bannerCarousel3.png"
-              alt="Slide 3"
-            />
-            <div class="fade-overlay"></div>
-          </div>
-        </div>
-        <div class="fade-caption">
-          <div id="subtitle-text">Reliable. Experienced. Professional</div>
-          <div id="biggest-text">
-            LET’S TURN YOUR DREAM HOME INTO A REALITY.
           </div>
 
+          <div class="carousel-item fade-slide">
+            <img src="./assets/images/Banner/bannerCarousel2.jpg" class="img-fluid" alt="Slide 2"/>
+            <div class="fade-overlay"></div>
+          </div>
+
+          <div class="carousel-item fade-slide">
+            <img src="./assets/images/Banner/bannerCarousel3.png" class="img-fluid" alt="Slide 3"/>
+            <div class="fade-overlay"></div>
+          </div>
+        </div><!-- End of Listbox -->
+
+        <div class="fade-caption">
+         <div id="subtitle-text">Reliable. Experienced. Professional</div>
+          <div id="biggest-text">
+            LET’S TURN YOUR DREAM HOME INTO A REALITY.
+          </div> 
+ 
           <div class="button-container">
-            <div
-              class="text-white text-xl font-bold font-roboto uppercase tracking-wide"
-            >
+            <div class="text-white text-xl font-bold font-roboto uppercase tracking-wide">
               Get Started
             </div>
           </div>
-        </div>
-      </div>
+      </div> 
+        <!-- End of fade-caption -->
+     </div>
     </section>
 
     <script src="../assets/js/banner.js"></script>

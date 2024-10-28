@@ -31,124 +31,28 @@
     /></noscript>
 	</head>
 	<body class="landing is-preload">
-       
+
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
-      
-    <header id="header" class="d-flex align-items-center">
-      <!-- Start of Navbar -->
-      <nav id="myNavBar" class="navbar order-last order-lg-0">
-        <div id="logo" class="me-auto">
-          <a href="index.html">
-            <img src="assets/images/Branding/CKaufmanLogo.png" />
-          </a>
-        </div>
-          <div class="topnav" id="myTopnav">
-              <a href="#banner-section">Home</a>
-              <a href="#services-section">Our Services</a>
-              <a href="#one">About</a>
-              <a href="#contact-form-section">Contact</a>
-              <a href="#footer">Socials</a>
-              <a href=""></a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-search"></i>
-                  <i class="fa fa-user-circle"></i>
-                  <i class="fa fa-bars"></i>
-              </a>
-            </div>
-        </nav><!-- End of NavBar -->
-    </header>
+
+      <!-- Navbar -->
+      <div id="navbar"></div>
 
       <!-- Banner -->
-      <section id="banner" class="flex-container">
-        <div id="carousel-example-generic" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="banner"></div>
 
-          <div class="carousel-inner" role="listbox">
+      <!-- Services -->
+      <div id="services"></div>
 
-            <div class="carousel-item active fade-slide">
-              <img src="./assets/images/Banner/bannerCarousel1.png" class="img-fluid" alt="Slide 1"/>
-              <div class="fade-overlay"></div>
-            </div>
+      <!-- About -->
+      <div id="about"></div>
 
-            <div class="carousel-item fade-slide">
-              <img src="./assets/images/Banner/bannerCarousel2.jpg" class="img-fluid" alt="Slide 2"/>
-              <div class="fade-overlay"></div>
-            </div>
+      <!-- Contact Form -->
+      <div id="contactForm"></div>
 
-            <div class="carousel-item fade-slide">
-              <img src="./assets/images/Banner/bannerCarousel3.png" class="img-fluid" alt="Slide 3"/>
-              <div class="fade-overlay"></div>
-            </div>
-          </div><!-- End of Listbox -->
+      <!-- Footer -->
+      <div id="footer"></div>
 
-          <div class="fade-caption">
-           <div id="subtitle-text">Reliable. Experienced. Professional</div>
-            <div id="biggest-text">
-              LET’S TURN YOUR DREAM HOME INTO A REALITY.
-            </div> 
-   
-            <div class="button-container">
-              <div class="text-white text-xl font-bold font-roboto uppercase tracking-wide">
-                Get Started
-              </div>
-            </div>
-        </div> 
-          <!-- End of fade-caption -->
-       </div>
-      </section>
-
-      <!-- Banner -->
-      <!-- <div id="banner-section"></div> -->
-
-
-							<!-- Row 2 -->
-							<div id="row-phone-label">
-								<div>Phone number</div>
-									<input
-									type="text"
-									id="number-field"
-									required
-									/>
-							</div>
-
-							<!-- Row 3 -->
-							<div class="Col"
-							>
-								<div>Message</div>
-									<input
-									type="text"
-									id="message-input"
-									required
-									/>
-								</div>
-							</div>
-
-						<div
-							id="button-main-container"
-						>
-							<input type="submit" class="button-container" value="Send Message">
-							</div>
-						</div>
-						</form>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-							<li><a href="https://www.instagram.com/ccameron797/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
-						</ul>
-						<ul class="copyright">
-							<li>EMAIL:curtiskaufman404@gmail.com </li><li>Design Version: 1.02 </li>
-						</ul>
-					</footer>
-
-			</div>
-			
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
@@ -162,15 +66,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script>
-      // Load sections
-      loadComponent("navbar-section", "components/navbar.html");
-      loadComponent("banner-section", "components/banner.html");
-      loadComponent("services-section", "components/services.html");
-      /* loadComponent('services-section-V2', 'components/servicesV2.html'); */
-      loadComponent("about-section", "components/about.html");
-      loadComponent("contact-form-section", "components/contactForm.html");
-      loadComponent("gallery-section", "components/gallery.html");
-      loadComponent("footer-section", "components/footer.html");
+      // Function to load an external HTML file
+      function loadHTMLComponent(url, containerId) {
+        fetch(url) // Fetch the HTML file
+          .then(response => response.text()) // Get the text from the response
+          .then(data => {
+            document.getElementById(containerId).innerHTML = data; // Inject into the div
+          })
+          .catch(error => console.error('Error loading component:', error));
+            }
+
+      // Load multiple components
+      window.onload = function () {
+        loadHTMLComponent('components/navbar.html', 'navbar');
+        loadHTMLComponent('components/banner.html', 'banner');
+        loadHTMLComponent('components/services.html', 'services');
+        loadHTMLComponent('components/about.html', 'about');
+        loadHTMLComponent('components/contactForm.html', 'contactForm');
+        loadHTMLComponent('components/footer.html', 'footer');
+      }
     </script>
   </body>
 </html>
